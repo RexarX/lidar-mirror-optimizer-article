@@ -77,7 +77,7 @@ xelatex article.tex && xelatex article.tex
 
 | Файл | Назначение |
 |------|------------|
-| `article.tex` | Пустой шаблон |
+| `article.tex` | Статья про оптимизацию позы зеркала LiDAR |
 | `misisarticle.cls` | Класс оформления |
 | `example/` | Эталонная статья для проверки класса, в zip для Overleaf не входит |
 | `Makefile` | `make article`, `make example`, `make dist` |
@@ -115,12 +115,14 @@ make example
 
 ## Чек-лист перед сдачей
 
-- [ ] Компилятор: **XeLaTeX** (или tectonic)
-- [ ] Файл `misisarticle.cls` рядом с вашим `.tex`
-- [ ] Заполнены коды, аннотация и ключевые слова
-- [ ] Рисунки с подписями «Рис. N.»
-- [ ] Таблицы с подписями «Таблица …»
-- [ ] PDF собирается без ошибок
+- [x] Компилятор: **XeLaTeX** (или tectonic)
+- [x] Файл `misisarticle.cls` рядом с вашим `.tex`
+- [x] Заполнены коды, аннотация и ключевые слова
+- [x] Рисунки с подписями «Рис. N.»
+- [x] Таблицы с подписями «Таблица …»
+- [x] PDF собирается без ошибок
+
+Сборка статьи: `xelatex -output-directory=build article.tex` (два прохода). PDF: `build/article.pdf`.
 
 ## Лицензия
 
